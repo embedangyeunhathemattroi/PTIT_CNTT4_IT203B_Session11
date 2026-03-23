@@ -15,7 +15,7 @@ public class LabResultInsert {
                     "root",
                     "123456");
 
-            // 🔥 Tạo 1 lần duy nhất
+            // Tạo 1 lần duy nhất
             ps = conn.prepareStatement(sql);
 
             for (int i = 1; i <= 1000; i++) {
@@ -27,7 +27,7 @@ public class LabResultInsert {
                 ps.executeUpdate(); // chạy nhanh hơn Statement
             }
 
-            System.out.println("✅ Insert 1000 records thành công!");
+            System.out.println(" Insert 1000 records thành công!");
 
         } catch (Exception e) {
             e.printStackTrace();
